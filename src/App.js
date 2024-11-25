@@ -98,7 +98,7 @@ function Main() {
             <div className="scroll-container">
               {["img1.jpeg", "imag2.jpeg", "img3.png", "img4.jpg", "img5.jpg", "img6.jpg", "image copy 4.png", "image copy 3.png", "img9.jpg", "image copy.png"].map((src, index) => (
                   <div key={index} className="scroll-item">
-                    <img src={src} alt={`Image ${index}`} className="image"/>
+                    <img src={src} alt={`Thumbnail ${index+1}`} className="image"/>
                   </div>
               ))}
             </div>
