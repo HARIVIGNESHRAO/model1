@@ -114,11 +114,11 @@ function SketchToReality() {
       <div id="statusMessage">{statusMessage}</div>
 
       <div className="output-container">
-        {inputImage && <img src={inputImageUrl} alt="Input Sketch" style={{ width: '1280px', height: '1280px', objectFit: 'cover', margin: '20px 0' }} />}
+        {inputImage && <img src={inputImageUrl} alt="Input Sketch Preview" style={{ width: '1280px', height: '1280px', objectFit: 'cover', margin: '20px 0' }} />}
 
         {loading && <div className="spinner"></div>}
 
-        {outputImage && !loading && <img src={outputImage} alt="Output Rendered Image" style={{ width: '1280px', height: '1280px', margin: '20px 0', objectFit: 'cover' }} />}
+        {outputImage && !loading && <img src={outputImage} alt="Rendered Output Preview" style={{ width: '1280px', height: '1280px', margin: '20px 0', objectFit: 'cover' }} />}
       </div>
 
       {/* Inline CSS styling for the spinner */}
