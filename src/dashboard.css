@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #121212; /* Dark background for a sleek look */
+    color: #ecf0f1;
+}
+
+/* Container for sidebar and main content */
+.container-1 {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.sidebar {
+    width: 250px;
+    background: #1c1c1c; /* Darker background for sidebar */
+    color: #ecf0f1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Profile section */
+.profile {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.initials {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #1abc9c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff; /* Change to white for better contrast */
+    margin: 0 auto 15px auto;
+}
+
+.profile h3 {
+    font-size: 18px;
+    color: #ecf0f1;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.profile p {
+    font-size: 14px;
+    color: #bdc3c7;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #ecf0f1;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    background-color: #1abc9c;
+    color: #fff;
+}
+
+.sidebar .logout {
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 12px;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+    text-decoration: none;
+    margin-top: auto; /* Pushes logout button to the bottom */
+}
+
+.sidebar .logout:hover {
+    background-color: #c0392b;
+}
+
+/* Main Content Styling */
+.main-content {
+    flex-grow: 1;
+    background-color: #f8f9fa; /* Light background to contrast with sidebar */
+    padding: 30px;
+    overflow-y: auto;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.dashboard-header h2 {
+    font-size: 26px;
+    color: #333;
+    font-weight: 600;
+}
+
+/* Card Layout */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: #1c1c1c; /* Matches sidebar for unified style */
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #1abc9c;
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px;
+        padding: 15px;
+    }
+
+    .card h3 {
+        font-size: 18px;
+    }
+
+    .sidebar ul li a {
+        font-size: 14px;
+    }
+}
