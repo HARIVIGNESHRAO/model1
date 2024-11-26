@@ -1,5 +1,5 @@
 from flask import Flask, request, send_file, jsonify
-from sketch_to_color import generate_image_from_input, numpy_image_to_bytestring
+from bwcode import generate_image_from_input, numpy_image_to_bytestring
 import io
 import os
 from flask_cors import CORS
